@@ -1,634 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Techno Arabia</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/06 logo-01.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Our Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+<style>
+  @font-face
+{
+  font-family: pointsoft;
+  src: url("Point Soft Semi Bold.otf") ;
+}
+* {
+    box-sizing: border-box;
+}
+h1{
+	font-size: 175%;
+    font-family: pointsoft;
+    text-align: center;
+}
+section {
+    border: 1px solid black;    
+    background-color: #999999;
+    height: 250px;
+    overflow: auto;
+}
+h2 {
+    float: right;
+    border:1px solid black;
+    font-family: pointsoft;
+    font-size: 125%;
+    padding: 5px 20px 5px 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+p {
+    clear: right;
+    padding-left: 20px;
+    font-family: pointsoft;
+    width: 90%;
+}
+#chicken {
+    background-color: #d59898;
+}
 
+#beef {
+    background-color: #c14543;
+    color: white;
+}
+
+#sushi {
+    background-color: #e5d198;
+}
+
+/********** Desktop version **********/
+@media (min-width: 992px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+      float: left;
+      padding: 15px;
+    }
+    .col-lg-1 {
+      width: 8.33%;
+    }
+    .col-lg-2 {
+      width: 16.66%;
+    }
+    .col-lg-3 {
+      width: 25%;
+    }
+    .col-lg-4 {
+      width: 33.33%;
+    }
+    .col-lg-5 {
+      width: 41.66%;
+    }
+    .col-lg-6 {
+      width: 50%;
+    }
+    .col-lg-7 {
+      width: 58.33%;
+    }
+    .col-lg-8 {
+      width: 66.66%;
+    }
+    .col-lg-9 {
+      width: 75%;
+    }
+    .col-lg-10 {
+      width: 83.33%;
+    }
+    .col-lg-11 {
+      width: 91.66%;
+    }
+    .col-lg-12 {
+      width: 100%;
+    }
+  }
+  
+  /********** Tablet version **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+      float: left;
+      padding: 15px;
+    }
+    .col-md-1 {
+      width: 8.33%;
+    }
+    .col-md-2 {
+      width: 16.66%;
+    }
+    .col-md-3 {
+      width: 25%;
+    }
+    .col-md-4 {
+      width: 33.33%;
+    }
+    .col-md-5 {
+      width: 41.66%;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-7 {
+      width: 58.33%;
+    }
+    .col-md-8 {
+      width: 66.66%;
+    }
+    .col-md-9 {
+      width: 75%;
+    }
+    .col-md-10 {
+      width: 83.33%;
+    }
+    .col-md-11 {
+      width: 91.66%;
+    }
+    .col-md-12 {
+      width: 100%;
+    }
+  }
+
+  /********** Mobile version **********/
+  @media (max-width: 767px) {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+      float: left;
+      padding: 15px;
+    }
+    .col-sm-1 {
+      width: 8.33%;
+    }
+    .col-sm-2 {
+      width: 16.66%;
+    }
+    .col-sm-3 {
+      width: 25%;
+    }
+    .col-sm-4 {
+      width: 33.33%;
+    }
+    .col-sm-5 {
+      width: 41.66%;
+    }
+    .col-sm-6 {
+      width: 50%;
+    }
+    .col-sm-7 {
+      width: 58.33%;
+    }
+    .col-sm-8 {
+      width: 66.66%;
+    }
+    .col-sm-9 {
+      width: 75%;
+    }
+    .col-sm-10 {
+      width: 83.33%;
+    }
+    .col-sm-11 {
+      width: 91.66%;
+    }
+    .col-sm-12 {
+      width: 100%;
+    }
+  }
+</style>
 <body>
 
-  <!-- ======= Top Bar ======= -->
-  <!-- <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="#">mohamed@techno-arabia.com</a>
-        <i class="bi bi-phone-fill phone-icon"></i> +962 7 9563 8279
-      </div>
-      <div class="social-links d-none d-md-block">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://web.facebook.com/Techno-Arabia-313562916088089" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/technoarabia6/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://wa.me/962792950811" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center" >
-    <div class="container d-flex align-items-center justify-content-between" >
-
-      <h1 class="logo"> <img d-load-src="assets/img/06 logo-01.png" style=" max-height: 75px;" alt="" > </h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar" style="font-weight: bold;" >
-        <ul >
-          <li><a class="nav-link scrollto active" href="#hero" >Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> -->
-          <li ><a class="nav-link scrollto" href="#team" >Team</a></li>
-          
-          <li ><a class="nav-link scrollto" href="#contact" >Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle" ></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-      <h1>Welcome to Techno Arabia</h1>
-      <h2>We are a team of talented developers making software solutions</h2>
-      <a href="#about" class="btn-get-started scrollto">Work with us</a>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-            <img d-load-src="assets/img/computer.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-            <h3>ABOUT US.</h3>
-            <p class="fst-italic">
-              We are a software and hardware development company using cutting edge technologies to form innovative solutions to real world problems and to improve the lives of people.
-              Our field of work includes website and application development, backends and hardware projects.
-              We specialise in transportation and delivery systems 
-              Being founded by a group of entrepreneurs we maintain core values that aid in projects development
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <b>Versatility</b>  No client is exactly the same. Our skills range allow us to recommend the right technologies for each client.</li>
-              <li><i class="bi bi-check-circle"></i> <b>Flexibility</b>  We are Agile which gives our clients full flexibility and transparency in their projects.</li>
-              <li><i class="bi bi-check-circle"></i> <b>Clean Code</b>   We use best practices in code development that make our work maintainable and adaptable.</li>
-            </ul>
-           
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-
-
-    <!-- ======= Clients Section ======= -->
-
-    <section id="clients" class="clients">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="row d-flex align-items-center">
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img d-load-src="assets/img/clients/Angular.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img d-load-src="assets/img/clients/sqls.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img d-load-src="assets/img/clients/sql.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img d-load-src="assets/img/clients/flutter.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img d-load-src="assets/img/clients/Api.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img d-load-src="assets/img/clients/php.png" class="img-fluid" alt="">
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Clients Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <span>Services</span>
-          <h2>Services</h2>
-          <p>Here are some of the services we provide</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-phone-fill phone-icon"></i></div>
-              <h4><a href="">Web & Mobile Development</a></h4>
-              <p>From your initial concept to your final product, we will guide you through the process of building a quality application aligned with your business objectives.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Ecommerce Development</a></h4>
-              <p>We can bring your online business to the next level by creating a high-quality online stores and ecommerce solutions.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">WordPress Development</a></h4>
-              <p>We are experts in building fast and easy to maintain WordPress websites.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">Front-end Development</a></h4>
-              <p>We offer professional conversion of your designs created in Sketch, Figma or Adobe XD to a modern, maintainable and fast front-end.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">Back-end Development</a></h4>
-              <p>We build fast, scalable and secure ASP.NET or PHP back-end applications with integrated external APIs or a custom one built according to your requirements.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="text-center">
-          <h3>TRANSPORTATION</h3>
-          <p>Among many skills we specialise in geo-spacial projects, tracking vehicles and mapping</p>
-          <!-- <a class="cta-btn" href="#">PROJECT BUSES  </a> -->
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-
-        <div class="section-title">
-          <span>Portfolio</span>
-          <h2>Portfolio</h2>
-          <p>All about the work we've done</p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Hardware</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="150">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img d-load-src="assets/img/portfolio/app1png.png" class="" alt="" height="740px" width="100%">
-            <div class="portfolio-info">
-              <h4>Muwasalat</h4>
-              <p>Read More ...</p>
-              <a href="assets/img/portfolio/app1gif.gif" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Muwasalat
-              This system aims at aiding citizens in viewing the routes of public transport buses in Jordan, working times, fares and stops. It features a journey planner that uses Geo-spatial maps to find the most suitable route for the user based on their criteria such as price, distance, and trip time.
-               "><i class="bx bx-plus"></i></a>
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img d-load-src="assets/img/portfolio/computerpng.png" class="" alt="" height="234px" width="100%">
-            <div class="portfolio-info">
-              <h4>Muzawed Console</h4>
-              <p>Read More ...</p>
-
-              <a href="assets/img/portfolio/computergif.gif" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Muzawed Console
-              This project was implemented in coordination with the syndicate of Petrol and Gas Distribution Stations Owners to allow customers to order gas via an app, the console features an API built in ASP.net core, Geo-spatial capabilities, MySQL Database and a dashboard.
-              "><i class="bx bx-plus"></i></a>
-             
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img d-load-src="assets/img/portfolio/app2gif.png" class="" alt="" height="234px" width="100%">
-            <div class="portfolio-info">
-              <h4>MedicareJo</h4>
-              <p>Read More ...</p>
-              <a href="assets/img/portfolio/app2png.gif" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="MedicareJo
-              Built using flutter and information provided by the MOH, this app allows the users to look up very useful information about the medical sector such as the locations, working hours and services of hospitals and medical centres. "><i class="bx bx-plus"></i></a>
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img d-load-src="assets/img/portfolio/card2png.png" class="" alt="" height="234px" width="100%">
-            <div class="portfolio-info">
-              <h4>Ibn Izz Bus Apps</h4>
-              <p>Read More ...</p>
-              <a href="assets/img/portfolio/card2png.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ibn Izz Bus Apps
-              The aim of this project was to track school buses and their routes, the app featured an easy-to-use user interface, background location tracking, automatic scheduling functions to only switch on tracking during working hours without user input."><i class="bx bx-plus"></i></a>
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img d-load-src="assets/img/portfolio/energy.png" class="" alt="" height="234px" width="100%">
-            <div class="portfolio-info">
-              <h4>Ekmeel</h4>
-              <p>Read More ...</p>
-              <a href="assets/img/portfolio/energy.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ekmeel
-              Is a landing page for a solar panels installation business. Built using PHP, MySQL, bootstrap and JQuery."><i class="bx bx-plus"></i></a>
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img d-load-src="assets/img/portfolio/muzawed.png" class="" alt="" height="164px" width="100%">
-            <div class="portfolio-info">
-              <h4>Muzawed Apps</h4>
-              <p>Read More ...</p>
-              <a href="assets/img/portfolio/cargif.gif" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Muzawed Apps
-              In conjunction with the console these apps allowed both the customers and drivers to complete orders with an easy intuitive user interface. The apps feature background location tracking, firebase plugins and a light footprint allowing installation on older devices.
-              "><i class="bx bx-plus"></i></a>
-            
-            </div>
-          </div>
-
-         
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img d-load-src="assets/img/portfolio/Bus1png.png" class="" alt="" height="234px" width="100%">
-            <div class="portfolio-info">
-              <h4>Ibn Izz Bus Console</h4>
-              <p>Read More ...</p>
-              <a href="assets/img/portfolio/Bus1gif.gif" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ibn Izz Bus Console
-              The function of this console is to take administrative control over the bus apps, creating accounts, planning routes and tracking buses both in the past and real time.
-              "><i class="bx bx-plus"></i></a>
-              
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img d-load-src="assets/img/portfolio/onlinpng.png" class="" alt="" height="234px" width="100%">
-            <div class="portfolio-info">
-              <h4>Bitak Online</h4>
-              <p>Read More ...</p>
-              <a href="assets/img/portfolio/onlingif.gif" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Bitak Online
-              Is an Ecommerce platform that allows users to post their products for sale and allows customers to purchase them. Built using PHP, laravel, JQuery, MySQL and bootstrap.
-              
-              
-              "><i class="bx bx-plus"></i></a>
-              
-            </div>
-          </div>
-          </div>
-
-     
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Pricing Section ======= -->
-    <!-- <section id="pricing" class="pricing">
-      <div class="container">
-
-        <div class="section-title">
-          <span>Pricing</span>
-          <h2>Pricing</h2>
-          <p>We offer competitive prices for high quality solutions </p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150">
-            <div class="box">
-              <h3>Static Website</h3>
-              <h4><span>FROM </span>300 <sup>$</sup></h4>
-              <ul>
-                <li>Cross-browser compatibility</li>
-                <li>Elegant and modren design </li>
-                <li>Responsive design</li>
-                <li>SEO</li>
-                
-              </ul> -->
-              <!--<div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>-->
-            <!-- </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in">
-            <div class="box featured">
-              <h3>Dynamic Website</h3>
-              <h4><span>FROM </span>400 <sup>$</sup></h4>
-              <ul>
-                <li>Clean, efficient & secure code</li>
-                <li>Cross-browser compatibility</li>
-                <li>Elegant and modren design</li>
-                <li>Responsive design</li>
-                <li>Single page apps</li>
-                <li>SEO & PWA</li>
-                <li>APIs</li>
-              </ul> -->
-              <!--<div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>-->
-            <!-- </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-            <div class="box">
-              <h3>Mobile App</h3>
-              <h4><span>FROM </span>600 <sup>$</sup></h4>
-              <ul>
-                <li></li>
-                <li>Cross-platform (Android & IOS)</li>
-                <li>Clean, efficient & secure code</li>
-                <li>Elegant and modren design</li>
-                <li>APIs</li>
-              </ul> -->
-              <!--<div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>-->
-            <!-- </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>End Pricing Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container">
-
-        <div class="section-title">
-          <span>Team</span>
-          <h2>Team</h2>
-          <p>A team of dedicated developers</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="assets/img/team/sofyan.png" alt="">
-              <h4>Sofyan</h4>
-              <!--<span>Chief Executive Officer</span>-->
-              <p>
-                 App development, full stack & wordpress. </p>
-             
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="assets/img/team/sofyan.png" alt="">
-              <h4>Osama</h4>
-              <!--<span>CTO</span>-->
-              <p>
-                Software developer.
-              </p>
-             
-            </div>
-          </div>
-
-          <!--Ahmad-->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" >
-            <div class="member">
-              <img src="assets/img/team/sofyan.png" alt="">
-              <h4>Ahmad</h4>
-              <!--<span>CTO</span>-->
-              <p>
-                Specialises in QA, UX, Graphic design, Adobe XD & Frontend development.
-              </p>
-             
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <span>Contact</span>
-          <h2>Contact</h2>
-          <p>Our valued customers can contact us via</p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-6">
-            <div class="info-box mb-4">
-              <i class="bx bx-map"></i>
-              <h3>Our Address</h3>
-              <p>Jordan-Amman</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
-              <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
-              <p> ahmad@techno-arabia.com</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
-              <i class="bx bx-phone-call"></i>
-              <h3>Call Us</h3>
-              <p>+962 7 92950811</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row" data-aos="fade-up">
-
-            <div class="col-lg-12 ">
-                <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13534.02550622551!2d35.94995911902792!3d32.001394346350125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b6041756fc2ef%3A0x2cb3357765e57e7c!2z2LfYqNix2KjZiNix2Iwg2LnZhdmR2KfZhg!5e0!3m2!1sar!2sjo!4v1633021402171!5m2!1sar!2sjo" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
-            </div>
-
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Email</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <b>Successfully <br>
-            Send email</b>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-info">
-              <h3>Techno Arabia</h3>
-              <p>
-               
-                Jordan-Amman<br><br>
-                <strong>Phone:</strong> +962 7 92950811<br>
-                <strong>Email:</strong>ahmad@techno-arabia.com<br>
-              </p>
-              <div class="social-links mt-3">
-                <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-                <a href="https://web.facebook.com/Techno-Arabia-313562916088089" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/technoarabia6/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://wa.me/962792950811" target="_blank" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
-
-                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
-                <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Platforms </h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a > React</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a > Angular</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a > Php</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a > ASP.Net Core</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4 style=" margin-top: revert;"> </h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a > Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a > Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a > Api</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a > Flutter</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4 style="margin-top: revert;"></h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a > SQL</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a > SQL Server</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a > HTML</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a > CSS</a></li>
-            </ul>
-
-          </div>
-
-        </div>
-      </div>
+    <h1>Our Menu</h1>
+
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <section>
+            <h2 id="chicken">Chicken</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </section>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-         Copyright  &copy; Techno arabia 2021
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ -->
-        <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
-      </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <section>
+            <h2 id="beef">Beef</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </section>
     </div>
-  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <div class="col-lg-4 col-md-12 col-sm-12">
+        <section>
+            <h2 id="sushi">Sushi</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </section>
+    </div>
 
 </body>
-
 </html>
+   
+    
+
+
+
+
+
+   
